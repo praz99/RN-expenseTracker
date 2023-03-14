@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
 
-const Button = ({customClick, title}) => {
+const ETButton = ({customClick, title}) => {
   return (
     <TouchableOpacity style={styles.button} onPress={customClick}>
       <Text style={styles.buttonText}>{title}</Text>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Button;
+export default ETButton;
