@@ -70,3 +70,5 @@ const DeleteUser = ({navigation}) => {
     </SafeAreaView>
   );
 };
+
+export default DeleteUser;

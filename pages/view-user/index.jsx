@@ -7,7 +7,7 @@ import ETTextInput from '../components/et-text-input';
 import ETButton from '../components/et-button';
 import {openDatabase} from 'react-native-sqlite-storage';
 
-var db = openDatabaseZ({name: 'UserDatabase.db'});
+var db = openDatabase({name: 'UserDatabase.db'});
 
 const ViewUser = () => {
   const [inputUserId, setInputUserId] = React.useState('');
