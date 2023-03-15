@@ -7,7 +7,7 @@ import {openDatabase} from 'react-native-sqlite-storage';
 var db = openDatabase({name: 'UserDatabase.db'});
 
 const ViewAllUser = () => {
-  const [flatListItems, setFlatListItems] = useState([]);
+  const [flatListItems, setFlatListItems] = React.useState([]);
 
   React.useEffect(() => {
     db.transaction(tx => {
@@ -33,7 +33,7 @@ const ViewAllUser = () => {
     );
   };
 
-  let letItemView = item => {
+  let listItemView = item => {
     return (
       <View
         key={item.user_id}

@@ -11,7 +11,7 @@ var db = openDatabase({name: 'UserDatabase.db'});
 
 const ViewUser = () => {
   const [inputUserId, setInputUserId] = React.useState('');
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = React.useState({});
 
   let searchUser = () => {
     console.log(inputUserId);

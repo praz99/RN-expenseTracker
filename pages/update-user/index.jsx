@@ -108,12 +108,12 @@ const UpdateUser = ({navigation}) => {
               <ETButton title="Search User" customClick={searchUser} />
               <ETTextInput
                 placeholder="Enter Name"
-                value={suerName}
+                value={userName}
                 style={{padding: 10}}
                 onChangeText={userName => setUserName(userName)}
               />
               <ETTextInput
-                placeholder="Enbter Contact Number"
+                placeholder="Enter Contact Number"
                 value={'' + userContact}
                 onChangeText={userContact => setUserContact(userContact)}
                 maxLength={10}
