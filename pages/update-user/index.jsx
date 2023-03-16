@@ -123,7 +123,7 @@ const UpdateUser = ({navigation}) => {
               <ETTextInput
                 value={userAddress}
                 placeHolder="Enter Address"
-                onChangeText={userAddress => setUseAddress(userAddress)}
+                onChangeText={userAddress => setUserAddress(userAddress)}
                 maxLength={225}
                 numberOfLines={5}
                 multiline={true}
